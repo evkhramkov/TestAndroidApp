@@ -30,6 +30,12 @@ platform :android do
       task: 'assemble',
       build_type: 'Release'
     )
+
+    mobile_center_upload(
+      api_token: '84ececc13d8327a84c001e73c6731ab7d8561104',
+      owner_name: 'v-evkhra',
+      app_name: 'TestAndroidApp'
+    )
   end
 
   # You can define as many lanes as you want
