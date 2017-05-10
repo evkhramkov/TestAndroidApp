@@ -26,11 +26,13 @@ platform :android do
   end
 
   lane :build do
+    # builds apk file and saves its path to SharedValues::GRADLE_APK_OUTPUT_PATH
     gradle(
       task: 'assemble',
       build_type: 'Release'
     )
 
+    # gets apk from SharedValues::GRADLE_APK_OUTPUT_PATH by default
     mobile_center_upload(
       api_token: '84ececc13d8327a84c001e73c6731ab7d8561104',
       owner_name: 'v-evkhra',
