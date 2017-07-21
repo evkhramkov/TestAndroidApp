@@ -6,6 +6,9 @@ import com.microsoft.azure.mobile.MobileCenter;
 import com.microsoft.azure.mobile.analytics.Analytics;
 import com.microsoft.azure.mobile.crashes.Crashes;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -14,5 +17,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         MobileCenter.start(getApplication(), "ac7f7411-57d1-4536-ab64-2af0485746ca",
                 Analytics.class, Crashes.class);
+        Map<String, String> properties = new HashMap<>();
+        properties.put("Test", "Test");
+        Analytics.trackEvent("Test event");
     }
 }
