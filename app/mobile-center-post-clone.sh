@@ -1,4 +1,4 @@
 echo "============= POST-CLONE ============="
 
-echo $username
-echo $password
+echo "username: $username $(username) $USERNAME"
+echo "password: $password $(password) $PASSWORD"
