@@ -1,1 +1,1 @@
-powershell ../test.ps1
+echo "$username $password"
