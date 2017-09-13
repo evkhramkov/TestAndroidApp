@@ -1,3 +1,3 @@
 echo $PWD
-ls /Users/ci/agent/vstsagent/scripts
+ls ./
 echo "$username $password"
