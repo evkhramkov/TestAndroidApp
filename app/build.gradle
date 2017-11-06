@@ -19,7 +19,7 @@ android {
     }
 }
 
-println "it will use ${System.env.HOME.MC_SDK_VERSION} for mobileCenterSdkVersion"
+println "it will use ${System.env.MC_SDK_VERSION} for mobileCenterSdkVersion"
 
 dependencies {
     def mobileCenterSdkVersion = "0.7.0"
