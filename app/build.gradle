@@ -22,7 +22,7 @@ android {
 println "it will use ${System.env.MC_SDK_VERSION} for mobileCenterSdkVersion"
 
 dependencies {
-    def mobileCenterSdkVersion = "0.7.0"
+    def mobileCenterSdkVersion = "${System.env.MC_SDK_VERSION}"
     compile "com.microsoft.azure.mobile:mobile-center-analytics:${mobileCenterSdkVersion}"
     compile "com.microsoft.azure.mobile:mobile-center-crashes:${mobileCenterSdkVersion}"
 
