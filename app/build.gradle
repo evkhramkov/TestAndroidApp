@@ -1,5 +1,22 @@
 apply plugin: 'com.android.application'
 
+println 'variable MOBILECENTER_KEYSTORE_PASSWORD:'
+println System.getProperty('MOBILECENTER_KEYSTORE_PASSWORD')
+println 'variable MOBILECENTER_KEY_ALIAS:'
+println System.getProperty('MOBILECENTER_KEY_ALIAS')
+println 'variable MOBILECENTER_KEY_PASSWORD:'
+println System.getProperty('MOBILECENTER_KEY_PASSWORD')
+println 'variable MOBILECENTER_BUILD_VERSION:'
+println System.getProperty('MOBILECENTER_BUILD_VERSION')
+println 'variable APPCENTER_KEYSTORE_PASSWORD:'
+println System.getProperty('APPCENTER_KEYSTORE_PASSWORD')
+println 'variable APPCENTER_KEY_ALIAS:'
+println System.getProperty('APPCENTER_KEY_ALIAS')
+println 'variable APPCENTER_KEY_PASSWORD:'
+println System.getProperty('APPCENTER_KEY_PASSWORD')
+println 'variable APPCENTER_BUILD_VERSION:'
+println System.getProperty('APPCENTER_BUILD_VERSION')
+
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.3"
